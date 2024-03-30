@@ -1,0 +1,63 @@
+.dropzone {
+    border: 2px dashed #dedede;
+    border-radius: 5px;
+    background: #f5f5f5;
+}
+
+.dropzone i{
+    font-size: 5rem;
+}
+
+.dropzone .dz-message {
+    color: rgba(0,0,0,.54);
+    font-weight: 500;
+    font-size: initial;
+    text-transform: uppercase;
+}
+
+.dropzone .dz-preview {
+    margin: 6px
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 100px;
+    height: 100px;
+}
+
+.btn-icon {
+    line-height: 0;
+}
+
+.card-box .card-img-top {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background-color: #e6e6e6;
+}
+
+.card-box .card-img-top img {
+    width: 40px;
+    height: 100%;
+    display: inline-block;    
+}
+
+.card-box .card-img-top.loading img {
+    width: 100%;
+}
+
+.loading {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading.active {
+    display: flex;
+}

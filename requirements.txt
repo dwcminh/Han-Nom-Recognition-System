@@ -1,0 +1,7 @@
+opencv-python==4.6.0.66
+tensorflow
+tensorflowjs
+keras_resnet==0.2.0
+Shapely
+pyclipper==1.3.0.post5
+scikit-image

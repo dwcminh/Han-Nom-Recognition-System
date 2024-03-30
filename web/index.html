@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Han-Nom Recognition System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="container mx-auto">
+        <div class="py-3">
+            <h3 class="text-center mb-3">Han-Nom Recognition System</h3>
+            <div class="row">
+                <div class="col-12 col-xl-3 col-lg-3">
+                    <div class="card position-relative overflow-hidden">
+                        <div id="loading" class="loading active">
+                            <div
+                                class="spinner-border text-primary"
+                                role="status"
+                            >
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div class="fw-bold">Upload file</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="dropzone" id="fileArea">
+                                <div class="dz-message d-flex flex-column">
+                                    <i class="material-icons text-muted">cloud_upload</i>
+                                    Drag &amp; Drop here or click
+                                </div>    
+                            </div>                        
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success w-100" id="startProcessBtn">
+                               START PROCESS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-9 col-lg-9">
+                    <div
+                        class="alert alert-warning"
+                        role="alert"
+                    >
+                        Please select only 1 image file and click to the <b>START PROCESS</b> button.<br>
+                        <b>Note: The image size must be greater than 512px.</b>                   
+                    </div>
+                    <div class="mt-3 row" id="predictBody">
+                        <div class="col-12">
+                            <div class="card">
+                                <div clas="card-body">
+                                    <div class="d-flex justify-content-center align-items-center" style="height: 265px">
+                                        <div>
+                                            <div class="text-center"><i class="material-icons display-4 text-muted">smart_toy</i></div>
+                                            <div class="text-center text-muted">The result will be show here</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dropzone.min.js"></script>    
+    <script src="assets/pyodide/pyodide.js"></script>
+    <script src="assets/js/tf.min.js"></script>
+    <script src="assets/js/vocab.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/layers.js"></script>
+    <script src="assets/js/main.js"></script>    
+</body>
+
+</html>
