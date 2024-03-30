@@ -2,8 +2,7 @@
 Convert **Keras** models to **TFJS** and run it in the browser.
 
 **Note: using latest version of the browser, we're using Google Chrome >= 112**
-
-[Visit us]([http://210.211.125.36/])
+[Visit Han-Nom Recognition System Website]([http://210.211.125.36/])
 
 ## Requirements
 
